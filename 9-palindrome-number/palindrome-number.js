@@ -3,17 +3,25 @@
  * @return {boolean}
  */
 var isPalindrome = function(x) {
-    str = x+ ""
-    let p1 = 0;
-    let p2=str.length-1;
+    // str = x+ ""
+    // let p1 = 0;
+    // let p2=str.length-1;
 
-    while(p1<p2){
-        if(str[p1] !== str[p2]) {
-            return false
-        }
+    // while(p1<p2){
+    //     if(str[p1] !== str[p2]) {
+    //         return false
+    //     }
 
-        p1++;
-        p2--
+    //     p1++;
+    //     p2--
+    // }
+    // return true
+
+    const res = Number(String(x).split('').reverse().join(''))
+    if(res ===x) {
+        return true
     }
-    return true
+    else {
+        return false
+    }
 };
